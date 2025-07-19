@@ -1,4 +1,3 @@
-
 {pkgs}: let
   addService = pkgs.writeShellScriptBin "addservice" ''
     #!/bin/sh
@@ -48,5 +47,5 @@
     echo "Done."
   '';
 in {
-    inherit addService;
-  }
+  inherit addService;
+}

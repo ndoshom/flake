@@ -9,7 +9,7 @@
     };
   };
 
-  outputs = inputs@{
+  outputs = inputs @ {
     self,
     nixpkgs,
     home-manager,
@@ -23,7 +23,11 @@
       modules = [
         ./home.nix
       ];
-      extraSpecialArgs = { inherit inputs; };
+      extraSpecialArgs = {inherit inputs;};
+    };
+
+    devShells."${system}".default = pkgs.mkShell {
+      buildInputs = with pkgs; [alejandra];
     };
   };
 }
