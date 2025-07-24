@@ -16,8 +16,11 @@ in {
     ++ [
       btop
       helix
-      brave
+      fish
+      zoxide
+      gimp
     ];
+
 
   programs.home-manager.enable = true;
 }
