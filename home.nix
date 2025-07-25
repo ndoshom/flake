@@ -21,6 +21,7 @@ in {
       hyprshot
       yazi
       lazygit
+      hyprland
     ];
 
 
