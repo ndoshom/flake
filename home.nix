@@ -10,7 +10,6 @@ in {
   home.homeDirectory = "/home/ns";
   home.stateVersion = "25.11";
 
-  # Example packages to install
   home.packages = with pkgs;
     (lib.attrValues scripts)
     ++ [
@@ -19,6 +18,9 @@ in {
       fish
       zoxide
       gimp
+      hyprshot
+      yazi
+      lazygit
     ];
 
 
